@@ -15,6 +15,12 @@ public class Main {
             context.response.status(200).send("Result: " + (a + b));
         });
 
+        app.Post("/text", context -> {
+            String body = context.request.body();
+
+            context.response.status(200).send("Body: " + body);
+        });
+
         IOException error = app.Listen(3000);
 
         if (error != null) {

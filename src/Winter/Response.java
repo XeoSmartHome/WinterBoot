@@ -1,8 +1,6 @@
 package Winter;
 
-import java.io.BufferedWriter;
 import java.io.OutputStream;
-import java.nio.Buffer;
 
 public class Response {
     private final OutputStream outputStream;
